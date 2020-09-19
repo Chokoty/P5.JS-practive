@@ -10,7 +10,7 @@ const s = function(sketch) {
     sketch.setup = () => {
     document.body.style['userSelect'] = 'none';//사용자가 요소를 선택했는지 구분해주는 부분
     let h = document.body.clientHeight;
-    let c = sketch.createCanvas(sketch.windowWidth, sketch.windowHeight);
+    let c = sketch.createCanvas(sketch.windowWidth, h);
     c.position(0, 0);
     c.style('pointer-events', 'none');
     sketch.clear();
